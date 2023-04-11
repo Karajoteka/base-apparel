@@ -20,6 +20,10 @@ header {
   margin-left: 20px;
 }
 
+header .logo {
+  width: 120px;
+}
+
 .info {
   text-align: left;
   padding-right: 100px;
