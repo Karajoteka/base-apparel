@@ -78,6 +78,8 @@ header .logo {
   height: 45px;
   width: 100%;
   padding: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.4rem;
   background-color: var(--background);
   color: var(--soft-black);
   border: 1px solid var(--dark-grayish-red);
