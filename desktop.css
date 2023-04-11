@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  padding: 0 200px 0 150px;
+  grid-row: 1 / 2;
+  background-image: url(./img/bg-pattern-desktop.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.info {
+  text-align: left;
+  padding-right: 100px;
+}
+
+.info h1 {
+  margin-top: 80px;
+  font-size: 5rem;
+}
+
+.info p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+
+.box-input {
+  padding-right: 120px;
+}
+
+.box-input button {
+  right: 100px;
+  width: 75px;
+}
+
+.box-input .error-icon {
+  right: 190px;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.desktop-image {
+  display: inline-block;
+  grid-column: 2 / 3;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+

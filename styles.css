@@ -1,0 +1,135 @@
+:root {
+  --background: hsl(0, 100%, 98%);
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 68%); 
+  --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --soft-black: hsl(0,5.97%,26.27%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: var(--background);
+}
+
+main {
+  width: 375px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 30px;
+}
+
+header .logo {
+  width: 100px;
+}
+
+.desktop-image {
+  display: none;
+}
+.info {
+  margin-top: 60px;
+  padding: 0 50px 0 50px;
+  text-align: center;
+  color: var(--desaturated-red);
+}
+
+.info h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 1.2rem;
+}
+
+.info h1 span {
+  font-weight: 600;
+  color: var(--soft-black);
+}
+
+.info p {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.box-input {
+  position: relative;
+  padding: 0 50px 0 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-input input {
+  height: 45px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--background);
+  color: var(--soft-black);
+  border: 1px solid var(--dark-grayish-red);
+  border-radius: 20px;
+}
+
+.box-input input::placeholder {
+  color: var(--desaturated-red);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.box-input .error-icon {
+  position: absolute;
+  width: 20px;
+  right: 120px;
+  top: 12px;
+}
+
+.box-input button {
+  position: absolute;
+  right: 50px;
+  width: 60px;
+  height: 45.5px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 10px 20px var(--dark-grayish-red);
+}
+
+.box-input button img {
+  width: 14px;
+  padding-top: 2px;
+  padding-left: 3px;
+}
+
+.box-input button:hover {
+  cursor: pointer;
+  background: linear-gradient(135deg, hsl(0, 70%, 91%), hsl(0, 100%, 85%));
+}
+
+.box-input .error-message {
+  position: absolute;
+  top: 55px;
+  left: 70px;
+  font-size: 1.2rem;
+  color: var(--soft-red);
+}
+
+.inactive {
+  /* display: none; */
+}
+
+
+
+
